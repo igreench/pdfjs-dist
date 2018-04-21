@@ -31964,7 +31964,8 @@ var Annotation = function () {
       hasAppearance: !!this.appearance,
       id: params.id,
       rect: this.rectangle,
-      subtype: params.subtype
+      subtype: params.subtype,
+      text: (dict && dict._map && dict._map.Contents) || null
     };
   }
 
